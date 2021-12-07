@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-----------------Bootstrap CSS--------------------------------------------------------->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <!--------------------------Google Font------------------------------------------------->
+     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+
+     <!--Owl Caresol-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!--Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-------------------------------Custom CSS------------------------------------------>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.css">
+    <title>Muvi-Assignment</title>
+</head>
+<body>
+
+    <!-------------------------Nav Bar Start--------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ml-5" href="#"><img src="muvi-logo.svg"  alt=""></a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           
+                <ul class="navbar-nav ms-auto custom-nav">
+                    <li class="nav-item active mx-2 custom-nav-item">
+                      <a class="nav-link" href="#">ANIME MOVIES</a>
+                    </li>
+                    <li class="nav-item dropdown active mx-2 custom-nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          BOLLYWOOD
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">All Bollywood</a></li>
+                          <li><a class="dropdown-item" href="#">A to Z Bollywood</a></li>
+                          <li><a class="dropdown-item" href="#">Year Wise</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item dropdown active mx-2 custom-nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          HOLLYWOOD
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">All Hollywood</a></li>
+                            <li><a class="dropdown-item" href="#">A to Z Hollywood</a></li>
+                            <li><a class="dropdown-item" href="#">Year Wise</a></li>
+                          </ul>
+                      </li>
+                    <li class="nav-item dropdown active mx-2 custom-nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          CATEGORY
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">TV Web Series</a></li>
+                          <li><a class="dropdown-item" href="#">South Indian Hindi</a></li>
+                          <li><a class="dropdown-item" href="#">Hollywood English</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Odia Movies</a></li>
+                          <li><a class="dropdown-item" href="#">Bengali Movies</a></li>
+                          <li><a class="dropdown-item" href="#">Gujurati Movies</a></li>
+                          <li><a class="dropdown-item" href="#">Telugu Movies</a></li>
+                          <li><a class="dropdown-item" href="#">Punjabi Movies</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item active mx-2 custom-nav-item">
+                      <a class="nav-link" href="#">Top IMDB</a>
+                    </li>
+                    <li class="nav-item dropdown active mx-2 custom-nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          GENRE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Animation</a></li>
+                          <li><a class="dropdown-item" href="#">Comedy</a></li>
+                          <li><a class="dropdown-item" href="#">Horror</a></li>
+                          <li><a class="dropdown-item" href="#">Mystery</a></li>
+                          <li><a class="dropdown-item" href="#">Sci-Fi & Fantasy</a></li>
+                          <li><a class="dropdown-item" href="#">Biography</a></li>
+                          <li><a class="dropdown-item" href="#">Drama</a></li>
+                          <li><a class="dropdown-item" href="#">Kids</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Thriller</a></li>
+                          <li><a class="dropdown-item" href="#">Adventure</a></li>
+                          <li><a class="dropdown-item" href="#">Crime</a></li>
+                          <li><a class="dropdown-item" href="#">Romance</a></li>
+                          <li><a class="dropdown-item" href="#">War</a></li>
+                          <li><a class="dropdown-item" href="#">Sports</a></li>
+                          <li><a class="dropdown-item" href="#">History</a></li>
+                          <li><a class="dropdown-item" href="#">War & Politics</a></li>
+                          <li><a class="dropdown-item" href="#">Erotic</a></li>
+                        </ul>
+                      </li>
+                  </ul>
+                    <form class="d-flex p-3">
+                        <input class="form-control me-2" type="search" placeholder="Search Movie" aria-label="Search">
+                        <button class="btn button-clr" type="submit">Search</button>
+                    </form>
+          </div>
+        </div>
+      </nav>
+    
+    <!-------------------------Nav Bar End--------------------------------------->
+      
+    <section id="main">
+        <!---------Showcase heading------------------>
+        <div class="container text-center">
+            <h5 class="alert alert-info mt-5">Top Up-Coming Movies</h5>
+        </div>
+
+         <!--Showcase-Box-->
+         
+         <div class="container">
+            <div class="owl-carousel owl-theme mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/i.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sooryavanshi</h5>
+                      <div class="d-inline align-baseline mr-1">4.6<span class="full-rating">/5</span></div>
+                      <div class=" align-baseline text-sm text-warning mr-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/a.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">CHOICES</h5>
+                      <div class="d-inline align-baseline mr-1">4.6<span class="full-rating">/5</span></div>
+                      <div class=" align-baseline text-sm text-warning mr-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/b.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Jungle Cruise</h5>
+                      <div class="d-inline align-baseline mr-1">4.6<span class="full-rating">/5</span></div>
+                      <div class=" align-baseline text-sm text-warning mr-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/c.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Dil Bekarar</h5>
+                      <div class="d-inline align-baseline mr-1">4.6<span class="full-rating">/5</span></div>
+                      <div class=" align-baseline text-sm text-warning mr-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/d.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Hawkeye</h5>
+                      <div class="d-inline align-baseline mr-1">4.6<span class="full-rating">/5</span></div>
+                      <div class=" align-baseline text-sm text-warning mr-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/e.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Shang-Chi and The Legend</h5>
+                      <div class="d-inline align-baseline mr-1">4.6<span class="full-rating">/5</span></div>
+                      <div class=" align-baseline text-sm text-warning mr-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/f.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Golmal 5</h5>
+                      <div class="d-inline align-baseline mr-1">4.6<span class="full-rating">/5</span></div>
+                      <div class=" align-baseline text-sm text-warning mr-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Movies Row-->
+    <section id="latest_popular">
+        <div class="container mt-5">
+            <h5 class="btn btn-danger">POPULAR MOVIES <i class="fas fa-caret-right"></i></h5>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                <div class="col mb-4">
+                  <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/1.jpg" class=" movie__img" alt="..."></a>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Bob Biswas</h5>
+                      <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                    </div>
+                  </div>
+                </div>  
+                <div class="col mb-4">
+                    <div class="card">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/2.jpg" class="movie__img" alt="..."></a>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Chhorii</h5>
+                        <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                      </div>
+                    </div>
+                  </div>  
+                  <div class="col mb-4">
+                    <div class="card">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/3.jpg" class="card-img-top movie__img" alt="..."></a>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Soorryavanshi</h5>
+                        <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                      </div>
+                    </div>
+                  </div>  
+                  <div class="col mb-4">
+                    <div class="card">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/4.jpg" class="card-img-top movie__img" alt="..."></a>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Matsya Kaand</h5>
+                        <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                      </div>
+                    </div>
+                  </div>  
+                  <div class="col mb-4">
+                    <div class="card">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/5.jpg" class="card-img-top movie__img" alt="..."></a>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Jai Bhim</h5>
+                        <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                      </div>
+                    </div>
+                  </div>  
+                  <div class="col mb-4">
+                    <div class="card">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/6.jpg" class="card-img-top movie__img" alt="..."></a>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Shang-Chi</h5>
+                        <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                      </div>
+                    </div>
+                  </div>  
+                  <div class="col mb-4">
+                    <div class="card">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/7.jpg" class="card-img-top movie__img" alt="..."></a>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">No Time To Die</h5>
+                        <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/8.jpg" class="card-img-top movie__img" alt="..."></a>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">The Power of The Dog</h5>
+                        <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/9.jpg" class="card-img-top movie__img" alt="..."></a>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Antim</h5>
+                        <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/10.jpg" class="card-img-top movie__img" alt="..."></a>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Hpuse of Gucci</h5>
+                        <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+              <hr>
+        </div>
+       
+    </section>
+    <section id="latest_webseries">
+        <div class="container mt-5">
+            <h5 class="btn btn-danger">LATEST MOVIES & WEB SERIES <i class="fas fa-caret-right"></i></h5>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                <div class="col mb-4">
+                    <div class="card">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/11.jpg" class="card-img-top movie__img" alt="..."></a>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Squid Game</h5>
+                          <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/12.jpg" class="card-img-top movie__img" alt="..."></a>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Money Heist-5</h5>
+                          <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/13.jpg" class="card-img-top movie__img" alt="..."></a>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">The Wheel of Time</h5>
+                          <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/14.jpg" class="card-img-top movie__img" alt="..."></a>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Last Night in Solo</h5>
+                          <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/Movie/15.jpg" class="card-img-top movie__img" alt="..."></a>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">GhostBusters</h5>
+                          <a href="#" class="btn button-18"><i class="fas fa-play-circle p-3"></i>Watch Now</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </div>
+    </section>
+
+
+<!----------------------------------------------------------------------------------->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+                <img src="images/Movie/1.jpg" class="modal-image" alt="">
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <h3>Bob Biswas</h3>
+                    <p>Bob Biswas is an upcoming movie by Red Chillies Entertainment in association with Sujoy Ghosh's Bound Script Production. Starring Abhishek Bachchan in the lead, this movie is the directorial debut of Diya Annapurna Ghosh. This movie is a spin-off on a fictional character named Bob Biswas from Kahaani (2012).</p>
+                    <div class="casting">
+                        <h6><b>Director: </b>Diya Annapurna Ghosh</h6><br>
+                        <h6><b>Writers: </b>Sujoy Gosh</h6><br>
+                        <h6><b>Cast: </b>Abhishek Bachchan, Chitrangada Singh</h6><br>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!----------------------------------------------------------------------------------------------->
+      <section>
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About Us</h3>
+                            <ul>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">DMCA Policy</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Platform</h3>
+                            <ul>
+                                <li><a href="#">Online Movie</a></li>
+                                <li><a href="#">Web Series</a></li>
+                                <li><a href="#">TV Everywhere Platform</a></li>
+                                <li><a href="#">OTT Platform</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text mb-4">
+                            <h3>Muvi</h3>
+                            <p>Muvi enables media content owners to easily monetize their Video/Audio content beyond the borders of traditional advertising. We do this by offering a self-service white label platform, using which media content owners can launch their own Multi-Screen Video and Audio Streaming (Live & On-Demand) platform in a matter of just a few minutes and at ZERO upfront investment! Muvi works on Software-as-a-Service (SaaS) model and charges a very low monthly fee in return for content owners to be able to use its platform and services.</p>
+                        </div>
+                    <p class="copyright">© 2021 Muvi LLC, All Rights Reserved</p>
+                </div>
+            </footer>
+        </div>
+      </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
