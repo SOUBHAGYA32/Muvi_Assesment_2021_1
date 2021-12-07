@@ -20,8 +20,9 @@
 
 ## Meta Data show using Modal
 ### Screenshot-1
-[![Main content](16.png)](https://github.com/SOUBHAGYA32)
+[![Main content](18.png)](https://github.com/SOUBHAGYA32)
 
 ### Screenshot-2
-[![Main content](17.png)](https://github.com/SOUBHAGYA32)
+[![Main content](19.png)](https://github.com/SOUBHAGYA32)
+
 
